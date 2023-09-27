@@ -1,18 +1,22 @@
 // import helpers files
-@use 'sass/helpers/variables';
-@use 'sass/helpers/mixins';
-@use 'sass/helpers/functions';
+@import "sass/helpers/variables";
+@import "sass/helpers/mixins";
+@import "sass/helpers/functions";
 
-// import components files
-@use 'sass/components/buttons';
-@use 'sass/components/p';
+@import "sass/theme/theme";
+@import "sass/global-rules";
 
+
+
+@import "sass/components/buttons";
+@import "sass/components/p";
+
+
+@import "sass/layout/grid";
 // import layout files
-@use 'sass/layout/header';
-@use 'sass/layout/grid';
-@use 'sass/layout/footer';
+@import "sass/layout/header";
+
+@import "sass/layout/footer";
 
 // import pages files
-@use 'sass/pages/landing.page';
-
-
+@import "sass/pages/landing.page";

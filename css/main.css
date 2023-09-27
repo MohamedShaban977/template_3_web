@@ -1,10 +1,98 @@
-button {
-  font-size: 30px;
-  background-color: red;
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../../../assets/fonts/cairo/Cairo-Black.ttf");
+  font-weight: 900;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-p {
-  font-weight: 500;
-  font-size: 2rem;
-  color: violet;
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+}
+
+ul, ol {
+  list-style: none;
+  padding-inline: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.header .container .logo h1 {
+  margin-bottom: 0;
+}
+.header .container .navbar {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 70%;
+  padding: 10px;
+  background-color: #ec5e42;
+  border-radius: 20px;
+}
+.header .container .navbar li {
+  color: #cdc7c6;
+}
+button {
+  font-size: 50px;
+  background-color: yellow;
 }/*# sourceMappingURL=main.css.map */

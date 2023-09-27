@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: {
+        family: $font-family, sans-serif;
+        size: 16px;
+    }
+}
+
+
+ul ,ol {
+    list-style: none;
+    padding-inline: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+

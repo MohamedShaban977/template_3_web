@@ -1,0 +1,80 @@
+/// Media Query Mixin
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// Medium devices (tablets, 768px and up)
+// Large devices (desktops, 992px and up)
+// X-Large devices (large desktops, 1200px and up)
+// XX-Large devices (larger desktops, 1400px and up)
+
+//
+
+$small-devices: 576px;
+
+$medium-devices: 768px;
+
+$large-devices: 992px;
+
+$x-large-devices: 1200px;
+
+$xx-large-devices: 1400px;
+
+// Small devices (landscape phones, 576px and up)
+@mixin smallDevices {
+    @media (min-width: $small-devices) {
+        @content;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin mediumDevices {
+    @media (min-width: $medium-devices) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin largeDevices {
+    @media (min-width: $large-devices) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin x-LargeDevices {
+    @media (min-width: $x-large-devices) {
+        @content;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin xx-LargeDevices {
+    @media (min-width: $xx-large-devices) {
+        @content;
+    }
+}
+
+/// Overlay Mixin
+@mixin overlay($color: black, $opacity: 0.5) {
+    background-color: rgba($color: if($color != null, $color, null), $alpha: if($opacity != null, $opacity, null));
+}
+
+
+
+
+
+
+
+
+
+@mixin keyFrame($animation-name) {
+
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+}
+
+
+
+
